@@ -1,0 +1,245 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+   Hotel Natoma style sheet
+   Filename: styles.css
+
+   Author:Gilson Bastista
+   Date:02/9/2021
+
+ */
+html {
+   font-size: 20px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1,
+h2, h3, img, li, nav, p, section, textarea, ul {
+   border: 0;
+   margin: 0;
+   padding: 0;
+}
+section {
+    padding: 0.25em 0em;
+}
+
+ul {
+   list-style-type: none;
+}
+
+/* body and page container */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    max-width: 960px;
+    margin: 0 auto;
+
+   position: relative;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+    left: -10000px;
+    position: absolute;
+}
+p.skipnavigation a:focus {
+    background-color: white;
+    color: #082008;
+    left: auto;
+    right: 1em;
+    top: 1em;
+    z-index: 2;
+}
+
+/* header section */
+header {
+   background-color: #082008;
+   border-top-left-radius: 22px;
+   padding: 0.5em;
+}
+h1 img {
+    display: block;
+    height: 65px;
+    margin: 0 auto;
+    width: 368px;
+}
+
+/* image */
+/* viewport */
+.img_extra {
+    height: auto;
+    width: 100%;
+}
+/* container */
+.img_extra img {
+    height: auto;
+    width: 100%;
+}
+
+/* site navigation */
+nav.sitenavigation {
+    background-color: #697b56;
+    font-size: 1.25em;
+    padding: 2%;
+}
+nav.sitenavigation li {
+    display: block;
+    margin: 0 1em;
+    padding: 0.2em;
+}
+nav.sitenavigation a:link {
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+
+   -webkit-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+           transition-timing-function: ease;
+
+   -webkit-transition: 1s;
+   -o-transition: 1s;
+   transition: 1s;
+}
+nav.sitenavigation a:visited {
+   color: white;
+}
+.current {
+    background-color: #082008;
+    border-radius: 0.2em;
+}
+
+/* main content */
+article {
+    background-color: linen;
+    padding: 2%;
+    overflow: auto;
+}
+article h2 {
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.6em;
+   font-weight: 400;
+   line-height: 2em;
+   text-align: center;
+}
+article p {
+   margin: 0 2em 0.5em;
+}
+article p.pullquote {
+   font-size: 1.7em;
+   line-height: 1.4em;
+   margin: 0.5em 0.5em 0.4em;
+}
+article p.subhead {
+   margin-bottom: 1.6em;
+   text-align: center;
+}
+
+figure {
+	padding: 0.25em;
+}
+
+figure, figure img {
+    height: auto;
+    width: 100%;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+article ul {
+   margin-left: 2em;
+}
+
+ul.no_bullet {
+    list-style-type: none;
+}
+
+li.art {
+    list-style-image: url("../images/art.png");
+}
+li.culture {
+    list-style-image: url("../images/culture.png");
+}
+li.kids {
+    list-style-image: url("../images/kids.png");
+}
+
+/* footer section */
+footer {
+    background-color: #082008;
+    border-bottom-right-radius: 22px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer div {
+    clear: both;
+    padding: .5em;
+    text-align: center;
+    width: 100%;
+}
+
+@page {
+   margin: 0.75in;
+}
+/* print media */
+@media print {
+      article,body,footer,.container{
+        background-color: white;
+        color: black;
+      }
+      body {
+        margin: 1.5em;
+      }
+      nav {
+        display: none;
+      }
+}
+/* screen 768px */
+@media only screen and (min-width: 768px) {
+    /* image container*/
+    .img_extra img{
+        float: right;
+        max-width: 35%;
+    }
+    /* site navigation */
+    nav.sitenavigation li{
+        display: inline-block;
+        font-size: 1em;
+        text-align: center;
+    }
+    nav.sitenavigation a:hover{
+        color: #343a40;
+    }
+
+    .current {
+        color:white;
+    }
+
+    footer div img:hover{
+          -webkit-animation: social_midia 2s linear infinite;
+                  animation: social_midia 2s linear infinite;
+    }
+    @-webkit-keyframes social_midia{
+        from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+        to {-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+
+        from{
+        transform:rotate(0deg);transform:rotate(0deg);
+        }
+        to {
+        transform:rotate(360deg);transform:rotate(360deg);
+        }
+    }
+}

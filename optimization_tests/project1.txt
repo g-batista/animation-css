@@ -1,0 +1,9 @@
+Requirement #1
+    wifi 30Mb/s 2ms: 19 HTTP requests, 342ms.
+    good 2G 600kb/s 150ms: 19 HTTP requests, 4.93s.
+    fast test 48Mg/s  200ms : 19 HTTP requests, 898ms.
+
+Requirement #10
+    wifi 30Mb/s 2ms: 22 HTTP requests, 294ms.
+    good 2G 600kb/s 150ms: 22 HTTP requests, 2.40s.
+    fast test 48Mg/s  200ms : 22 HTTP requests, 914ms.
